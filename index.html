@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Homework 5 app</title>
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type='text/javascript' src="knockout-3.4.1.js"></script>
+
+  </head>
+
+  <body>
+  
+    <header>
+      <div class="Header-Display" data-bind="visible: showHeaderDisplay">
+        <h1 class="ui center aligned header">Trivia Time!</h1>
+
+      </div>
+
+      <div class ="Round-Over" data-bind="visible: showRoundOver">
+        <h1> Round Over!</h1>
+        <h1> Refresh to start a new round </h1>
+      </div>
+    </header>
+    
+    <main>
+      <div data-bind="visible: loginVisible">
+        <h2>Username</h2>
+        <input data-bind="value: username" type="text">
+        <button data-bind="click: loginClick">Submit</button> <!-- EDITTED WITH KNOCKOUT DATA BINDINGS -->
+        
+      
+      </div>
+
+      <div class="container">
+
+        <ul class="users" class="unstyled"></ul>
+        
+          <div class="ui hidden divider"></div>
+
+          <div class="Get-Question" >
+          <section class='get-question'>
+
+            <h2>Get Question</h2>
+            <p>Question:</p><input id="trivia-question" data-bind="value: questionField"><button data-bind="click: getQuestionClick">Get Question</button>
+          </section>
+          </div>
+
+          <div class="ui hidden divider"></div>
+          
+          <div class="Answer-Question" data-bind="visible: showAnswerQuestion">
+            <section class='post-answer'>
+              <h2>Post Answer</h2>
+              <input id="possible-answer" placeholder="Your Answer" data-bind="value: answerField"><button data-bind="click: postAnswerClick">Post Answer</button><input id="result" data-bind="value: isCorrect">   
+            </section>
+          </div>
+
+          <div class="ui hidden divider"></div>
+          
+          <div class="Update-Database" >
+            <section class='post-question' data-bind="visible: showPostQuestion">
+              <h2>Post New Question</h2>
+              <input id = "new-question" placeholder="Who played Al Bundy?"><input id="new-answer" placeholder="Ed O'Neil"><button data-bind">click: postQuestionClick"</button>
+            </section>
+          </div>
+      </div>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="app.js"></script>
+
+
+  </body>
+</html>
