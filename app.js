@@ -28,7 +28,7 @@ var main = function ()
         });
             
         url = 'http://localhost:3000/';              
-	};
+    };
 
     var post = function (choice) 
     {
@@ -36,8 +36,8 @@ var main = function ()
         if(choice === 1)
         {
             var newQuestion;
-			var newAnswer;        	
-        	url += 'postQuestion';
+            var newAnswer;        	
+            url += 'postQuestion';
 
             newQuestion = $('#new-question').val();
             newAnswer = $('#new-answer').val();
@@ -60,8 +60,8 @@ var main = function ()
         //postAnswer        
         else
         {
-        	url += 'postAnswer';        	
-        	var possibleAnswer;
+            url += 'postAnswer';        	
+            var possibleAnswer;
 
             possibleAnswer = $('#possible-answer').val();
             
@@ -90,7 +90,7 @@ var main = function ()
             
             url = 'http://localhost:3000/';
         }
-	};
+    };
 
     //--------------- KNOCKOUT --------------------
     var viewModel = function (){
