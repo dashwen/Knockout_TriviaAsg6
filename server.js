@@ -47,7 +47,7 @@ db.once('open', function() {
     console.log("checking if question1 loaded in my_dee_bee");
 
     collection.insert([input], function(err, result) {
-    if (err) {
+        if (err) {
             console.log(err);
         }
     });
@@ -134,8 +134,8 @@ var numPlayers = 0;
 
 // Socket.io 
 io.on('connection', function(socket){
-  console.log('a user connected');
-  
+    console.log('a user connected');
+
     socket.on("join", function(username, callback){
         users[socket.id] = username;
         rightArray[socket.id] = 0;
@@ -176,13 +176,13 @@ io.on('connection', function(socket){
 
 // Express and Socket.io both listening on port 3000
 server.listen(3000, function(){
-  console.log('listening on *:3000');
+    console.log('listening on *:3000');
 });
 
 
 
 app.get('/getQuestion', function (req, res) { 
-	var q, i, randQ;
+    var q, i, randQ;
     var Question = db.collection('questions');
     var idStatus = 0;
 
