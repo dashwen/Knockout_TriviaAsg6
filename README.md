@@ -30,13 +30,12 @@ Redis
 2. On Command console window1, type mongod and press enter
 3. On Command console window2, type redis-server and press enter
 4. On Command console window3, type node server.js and press enter
-5. On Command console window4, type mongo and press enter
-   Complete these steps in window 4 (mongo shell) 
-   5a. In mongo shell, type: show dbs
-   5b. type: use my_dee_bee
-   5c. type: db.questions.find() (SHOULD SHOW 5 QUESTIONS LOADED b/c of step 4)
-   6d. type: db.questions.drop() MANDATORY/BEFORE AFTER EVERY RUN!!!
-7. click on index.html and enjoy!
+5. On Command console window4, type mongo and press enter 
+6. In mongo shell, type: show dbs
+7. type: use my_dee_bee
+8. type: db.questions.find() (SHOULD SHOW 5 QUESTIONS LOADED b/c of step 4)
+9. type: db.questions.drop() MANDATORY/BEFORE AFTER EVERY RUN!!!
+10. click on index.html and enjoy!
 
 =========================   Notes/Comments   ==================================
 
