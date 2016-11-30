@@ -15,12 +15,12 @@ Redis
 1. clone repository
 2. Goto Knockout_TriviaAsg6 folder
 3. open command prompt and type the follow commands
-4. If Package.json not working, run the following commands
-	a. npm install —-save mongodb
-	b. npm install —-save express
-	c. npm install —-save mongodb
-	d. npm install —-save socket.io
-	e. npm install —-save redis 
+4. If Package.json not working, run the following commands <br />
+	a. npm install —-save mongodb <br />
+	b. npm install —-save express <br />
+	c. npm install —-save mongodb <br />
+	d. npm install —-save socket.io <br />
+	e. npm install —-save redis <br />
 
 ========================  To Run Trivia Game  =====================================
 
