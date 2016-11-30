@@ -2,8 +2,8 @@
 
 var main = function () 
 { 
-	'use strict';
-	var url = 'http://localhost:3000/';
+    'use strict';
+    var url = 'http://localhost:3000/';
     var socket = io();
     var right = 0;
     var wrong = 0;
@@ -12,7 +12,7 @@ var main = function ()
     var wScore = 0;
     var ID = 0;
 
-	var get = function () 
+    var get = function () 
     {
         //getQuestion
         url += 'getQuestion';
@@ -30,7 +30,7 @@ var main = function ()
         url = 'http://localhost:3000/';              
 	};
 
-	var post = function (choice) 
+    var post = function (choice) 
     {
         //postQuestion
         if(choice === 1)
